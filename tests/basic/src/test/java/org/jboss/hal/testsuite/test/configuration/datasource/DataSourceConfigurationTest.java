@@ -41,6 +41,7 @@ import org.wildfly.extras.creaper.core.online.operations.Operations;
 
 import static org.jboss.hal.dmr.ModelDescriptionConstants.*;
 import static org.jboss.hal.testsuite.test.configuration.datasource.DataSourceFixtures.*;
+import static org.jboss.hal.testsuite.test.configuration.datasource.DataSourceFixtures.CONNECTION_PROPERTIES;
 
 @RunWith(Arquillian.class)
 public class DataSourceConfigurationTest {

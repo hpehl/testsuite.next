@@ -76,7 +76,8 @@ public class CacheContainerFinderTest {
 
     @Test
     public void create() throws Exception {
-        AddResourceDialogFragment dialog = column.add();
+        column.dropdownAction(Ids.CACHE_CONTAINER_ADD_ACTIONS, Ids.CACHE_CONTAINER_ADD);
+        AddResourceDialogFragment dialog = console.addResourceDialog();
         dialog.getForm().text(NAME, CC_CREATE);
         dialog.add();
 
@@ -104,7 +105,7 @@ public class CacheContainerFinderTest {
         try {
             column.selectItem(Ids.cacheContainer(CC_READ)).view();
         } catch (TimeoutException e) {
-            Assert.fail("Not possible to open Cache container detail probably due to https://issues.jboss.org/browse/HAL-1442");
+            Assert.fail("Not possible to open cache container detail probably due to https://issues.jboss.org/browse/HAL-1442");
         }
 
         PlaceRequest placeRequest = new PlaceRequest.Builder().nameToken(NameTokens.CACHE_CONTAINER)

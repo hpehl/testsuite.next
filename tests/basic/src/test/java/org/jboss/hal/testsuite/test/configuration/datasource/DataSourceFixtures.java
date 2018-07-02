@@ -24,7 +24,7 @@ import static org.jboss.hal.dmr.ModelDescriptionConstants.DATASOURCES;
 import static org.jboss.hal.dmr.ModelDescriptionConstants.DATA_SOURCE;
 import static org.jboss.hal.dmr.ModelDescriptionConstants.XA_DATA_SOURCE;
 
-public final class DataSourceFixtures {
+final class DataSourceFixtures {
 
     private static final String DATA_SOURCE_PREFIX = "ds";
     private static final String XA_DATA_SOURCE_PREFIX = "xa-ds";

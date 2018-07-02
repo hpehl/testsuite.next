@@ -38,6 +38,7 @@ import org.wildfly.extras.creaper.core.online.operations.Operations;
 import org.wildfly.extras.creaper.core.online.operations.Values;
 
 import static org.jboss.hal.dmr.ModelDescriptionConstants.*;
+import static org.jboss.hal.dmr.ModelDescriptionConstants.MAX_RETRIES;
 import static org.jboss.hal.resources.Ids.JMS_BRIDGE;
 import static org.jboss.hal.resources.Ids.TAB;
 import static org.jboss.hal.testsuite.test.configuration.messaging.MessagingFixtures.*;
